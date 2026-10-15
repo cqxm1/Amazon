@@ -1,0 +1,42 @@
+IMAGE SOURCES - STAGE 1
+
+This project uses locally downloaded images. The HTML file references only relative paths inside the img folder.
+
+1. Amazon wordmark
+   File: amazon-logo.svg
+   Source: Wikimedia Commons
+   Page: https://commons.wikimedia.org/wiki/File:Amazon.com-Logo.svg
+   Original file: https://upload.wikimedia.org/wikipedia/commons/6/62/Amazon.com-Logo.svg
+   Note: The logo is used only for a non-commercial academic layout study. Amazon is a trademark of Amazon.com, Inc.
+
+2. Hero technology photograph
+   File: hero-tech.jpg
+   Source: Pexels
+   Page: https://www.pexels.com/photo/phone-and-other-devices-on-black-table-9956771/
+   Photographer: Emmanuel Jason Eliphalet
+
+3. Electronics photograph
+   File: electronics.jpg
+   Source: Pexels
+   Page: https://www.pexels.com/photo/silver-macbook-beside-headphones-and-camera-265655/
+   Contributor: Pixabay
+
+4. Home and kitchen photograph
+   File: home-kitchen.jpg
+   Source: Pexels
+   Page: https://www.pexels.com/photo/kitchen-tools-and-plate-6996301/
+   Photographer: Pavel Danilyuk
+
+5. Fashion photograph
+   File: fashion.jpg
+   Source: Pexels
+   Page: https://www.pexels.com/photo/flat-lay-of-clothing-and-accessories-3927390/
+   Photographer: cottonbro studio
+
+6. Books photograph
+   File: books.jpg
+   Source: Pexels
+   Page: https://www.pexels.com/photo/stacked-books-2228587/
+   Photographer: Thought Catalog
+
+Pexels photographs are marked as free to use on their source pages. The source pages are retained here for attribution and project documentation.

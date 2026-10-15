@@ -1,0 +1,456 @@
+/* Universal reset: removes default browser spacing from every element. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Page foundation: defines the main typeface, text color and neutral background. */
+body {
+    background: #e7e9ec;
+    color: #0f1111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Shared link treatment: removes default underlines and keeps inherited color. */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Shared image treatment: prevents inline images from leaving a baseline gap. */
+img {
+    display: block;
+}
+
+/* Top utility bar: creates the full-width Amazon-style dark header. */
+.top-bar {
+    background: #131921;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+/* Header content container: centers the header content at a fixed desktop width. */
+.top-bar-inner {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header item group: aligns the main header components on one line for the first-stage layout. */
+.brand,
+.delivery-block,
+.search-area,
+.account-block,
+.order-block,
+.cart-block {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Brand area: provides a light surface so the downloaded logo remains readable. */
+.brand {
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 7px 9px;
+    width: 105px;
+}
+
+/* Brand image: fits the logo inside the header brand box. */
+.brand img {
+    width: 105px;
+    height: 21px;
+}
+
+/* Delivery area: separates the location text from the logo and search bar. */
+.delivery-block {
+    margin-left: 10px;
+    padding: 5px 8px;
+    text-align: left;
+    width: 95px;
+}
+
+/* Small header labels: reduce emphasis on the first line of account information. */
+.small-label {
+    display: block;
+    color: #cccccc;
+    font-size: 11px;
+    line-height: 1.2;
+}
+
+/* Search form: creates the main search control between the location and account areas. */
+.search-area {
+    background: #ffffff;
+    border: 3px solid #febd69;
+    margin: 0 8px;
+    padding: 0;
+    width: 570px;
+}
+
+/* Search controls: places the category, input and button on the same line. */
+.search-area select,
+.search-area input,
+.search-area button {
+    border: 0;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 38px;
+    vertical-align: middle;
+}
+
+/* Category selector: gives the department control a light gray background. */
+.search-area select {
+    background: #f3f3f3;
+    color: #555555;
+    padding: 0 8px;
+    width: 60px;
+}
+
+/* Search input: reserves most of the search bar width for customer text. */
+.search-area input {
+    color: #333333;
+    font-size: 14px;
+    padding: 0 10px;
+    width: 360px;
+}
+
+/* Search button: uses the familiar orange Amazon accent color. */
+.search-area button {
+    background: #febd69;
+    color: #111111;
+    font-weight: bold;
+    width: 70px;
+}
+
+/* Account and order areas: creates compact two-line navigation items. */
+.account-block,
+.order-block {
+    padding: 5px 6px;
+    text-align: left;
+    width: 86px;
+}
+
+/* Cart area: reserves a clear final navigation item at the right side. */
+.cart-block {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 5px;
+    width: 58px;
+}
+
+/* Header hover feedback: adds a visible border when navigation items are selected. */
+.delivery-block:hover,
+.account-block:hover,
+.order-block:hover,
+.cart-block:hover {
+    border: 1px solid #ffffff;
+}
+
+/* Secondary navigation: creates a slightly lighter full-width department bar. */
+.category-nav {
+    background: #232f3e;
+    color: #ffffff;
+}
+
+/* Secondary navigation container: matches the fixed desktop width used by the main content. */
+.category-nav-inner {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 8px 0;
+}
+
+/* Secondary navigation links: displays the department links in a simple horizontal row. */
+.category-nav a {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 24px;
+    padding: 3px 0;
+}
+
+/* Secondary navigation feedback: underlines a department link when hovered. */
+.category-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content shell: creates a fixed-width centered desktop shopping area. */
+.page-shell {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 24px;
+}
+
+/* Hero section: separates the primary campaign area from the gray page background. */
+.hero-section {
+    background: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Hero image: fills the fixed-width campaign area while preserving the source proportions. */
+.hero-section > img {
+    width: 1200px;
+    height: 675px;
+}
+
+/* Hero message: provides clear campaign text below the image without using prohibited positioning. */
+.hero-copy {
+    background: #fff4d5;
+    border-bottom: 1px solid #d5d9d9;
+    padding: 24px 32px;
+    text-align: center;
+}
+
+/* Hero heading: establishes the strongest content hierarchy in the page body. */
+.hero-copy h1 {
+    color: #172233;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+/* Hero supporting text: limits the promotional copy to a readable visual rhythm. */
+.hero-copy p {
+    margin-bottom: 10px;
+}
+
+/* Hero kicker: introduces the campaign with a compact uppercase label. */
+.hero-copy .hero-kicker {
+    color: #b45f06;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Hero action link: uses the standard Amazon-inspired blue link color. */
+.hero-copy a {
+    color: #007185;
+    font-weight: bold;
+}
+
+/* Category section: creates a white shopping panel for the four main departments. */
+.category-section {
+    background: #ffffff;
+    border: 1px solid #d5d9d9;
+    margin-bottom: 20px;
+    padding: 22px 18px 26px;
+    text-align: center;
+}
+
+/* Category section heading: provides a clear title above the department cards. */
+.category-section > h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+/* Category cards: forms equal content boxes with an initial inline-block arrangement. */
+.category-card {
+    border: 1px solid #dddddd;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 14px;
+    text-align: left;
+    vertical-align: top;
+    width: 242px;
+}
+
+/* Category card headings: separates the department name from its image. */
+.category-card h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+/* Category card images: creates consistent visual dimensions across different source photographs. */
+.category-card img {
+    height: 180px;
+    margin-bottom: 12px;
+    width: 242px;
+}
+
+/* Category card descriptions: keeps each card's explanatory copy visually consistent. */
+.category-card p {
+    color: #444444;
+    height: 44px;
+    margin-bottom: 10px;
+}
+
+/* Category card actions: distinguishes department links from body copy. */
+.category-card a {
+    color: #007185;
+    font-weight: bold;
+}
+
+/* Category card hover feedback: applies the taught pseudo-class to the card action links. */
+.category-card a:hover {
+    color: #c7511f;
+    text-decoration: underline;
+}
+
+/* Deal strip: creates a strong promotional divider between shopping sections. */
+.deal-strip {
+    background: #172233;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding: 24px 30px;
+    text-align: center;
+}
+
+/* Deal copy: limits the text block width within the promotional divider. */
+.deal-copy {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    width: 820px;
+}
+
+/* Deal label: creates an orange promotional marker above the deal heading. */
+.deal-label {
+    color: #febd69;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+/* Deal heading: maintains a compact hierarchy inside the dark strip. */
+.deal-copy h2 {
+    font-size: 22px;
+}
+
+/* Deal action: creates a bordered call-to-action area at the right of the strip. */
+.deal-link {
+    border: 1px solid #febd69;
+    color: #febd69;
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 28px;
+    padding: 10px 18px;
+    vertical-align: middle;
+}
+
+/* Supporting service section: groups three customer-benefit boxes on a white panel. */
+.service-section {
+    background: #ffffff;
+    border: 1px solid #d5d9d9;
+    margin-bottom: 20px;
+    padding: 22px 18px 26px;
+    text-align: center;
+}
+
+/* Supporting service heading: labels the customer-benefit content group. */
+.service-section > h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+/* Service boxes: forms three equal introductory content areas. */
+.service-box {
+    background: #f7fafa;
+    border: 1px solid #d5d9d9;
+    display: inline-block;
+    margin: 0 7px;
+    padding: 20px;
+    text-align: left;
+    vertical-align: top;
+    width: 320px;
+}
+
+/* Service headings: creates a compact visual hierarchy inside each information box. */
+.service-box h3 {
+    color: #172233;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+/* Sign-in panel: centers the account recommendation near the bottom of the main content. */
+.sign-in-panel {
+    background: #ffffff;
+    border: 1px solid #d5d9d9;
+    padding: 28px;
+    text-align: center;
+}
+
+/* Sign-in heading: provides a friendly prompt above the action link. */
+.sign-in-panel h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+/* Sign-in primary action: creates an orange bordered button-like link. */
+.sign-in-panel > a {
+    background: #ffd814;
+    border: 1px solid #fcd200;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    padding: 7px 70px;
+}
+
+/* Sign-in supporting text: reduces the size of the new-customer message. */
+.sign-in-panel p {
+    font-size: 12px;
+}
+
+/* New-customer action: applies the standard link color inside the sign-in panel. */
+.sign-in-panel p a {
+    color: #007185;
+}
+
+/* Site footer: creates the final full-width dark information area. */
+.site-footer {
+    background: #131a22;
+    color: #dddddd;
+    text-align: center;
+}
+
+/* Back-to-top link: separates the return control from the darker footer content. */
+.back-to-top {
+    background: #37475a;
+    color: #ffffff;
+    display: block;
+    padding: 13px 0;
+}
+
+/* Footer content container: centers the four footer information groups. */
+.footer-inner {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 36px 0;
+    text-align: center;
+}
+
+/* Footer columns: forms four equal blocks for company and support links. */
+.footer-column {
+    display: inline-block;
+    margin: 0 22px;
+    text-align: left;
+    vertical-align: top;
+    width: 180px;
+}
+
+/* Footer headings: highlights each link group's purpose. */
+.footer-column h2 {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Footer links: places each destination on its own line. */
+.footer-column a {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+/* Footer link feedback: underlines informational links when hovered. */
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* Academic project notice: adds a clear non-commercial statement below the footer links. */
+.project-notice {
+    border-top: 1px solid #3a4553;
+    color: #999999;
+    font-size: 12px;
+    padding: 18px 0;
+}

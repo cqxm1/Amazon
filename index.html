@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Homepage Layout Study</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top utility bar: full-width dark strip for delivery, account, order and cart information -->
+    <div class="top-bar">
+        <div class="top-bar-inner">
+            <!-- Brand area: local Amazon logo image used as the page identity -->
+            <a class="brand" href="#" aria-label="Amazon home">
+                <img src="img/amazon-logo.svg" alt="Amazon logo">
+            </a>
+
+            <!-- Delivery area: short location information beside the brand -->
+            <div class="delivery-block">
+                <span class="small-label">Deliver to</span>
+                <strong>Hong Kong</strong>
+            </div>
+
+            <!-- Search area: category selector, search field and search button -->
+            <form class="search-area" action="#" method="get">
+                <select id="category" name="category" aria-label="Search category">
+                    <option>All</option>
+                    <option>Books</option>
+                    <option>Electronics</option>
+                    <option>Home</option>
+                </select>
+                <input id="search" name="search" type="text" placeholder="Search Amazon" aria-label="Search Amazon">
+                <button type="submit">Search</button>
+            </form>
+
+            <!-- Account links: sign-in and account navigation text -->
+            <a class="account-block" href="#">
+                <span class="small-label">Hello, sign in</span>
+                <strong>Account &amp; Lists</strong>
+            </a>
+
+            <!-- Order link: returns and order history navigation text -->
+            <a class="order-block" href="#">
+                <span class="small-label">Returns</span>
+                <strong>&amp; Orders</strong>
+            </a>
+
+            <!-- Cart link: simple text treatment reserved for a later icon refinement -->
+            <a class="cart-block" href="#">Cart (0)</a>
+        </div>
+    </div>
+
+    <!-- Secondary navigation bar: product departments and service links -->
+    <div class="category-nav">
+        <div class="category-nav-inner">
+            <a href="#">All</a>
+            <a href="#">Today's Deals</a>
+            <a href="#">Customer Service</a>
+            <a href="#">Registry</a>
+            <a href="#">Gift Cards</a>
+            <a href="#">Sell</a>
+        </div>
+    </div>
+
+    <!-- Main page content: fixed-width centered area containing the promotional and shopping sections -->
+    <main class="page-shell">
+        <!-- Hero section: large promotional image followed by a readable campaign message -->
+        <section class="hero-section">
+            <img src="img/hero-tech.jpg" alt="Laptop and headphones on a bright yellow background">
+            <div class="hero-copy">
+                <p class="hero-kicker">REFRESH YOUR EVERYDAY TECHNOLOGY</p>
+                <h1>Explore useful finds for work, home and study</h1>
+                <p>Browse practical categories and discover a simple shopping experience inspired by Amazon's homepage structure.</p>
+                <a href="#category-cards">Shop featured categories</a>
+            </div>
+        </section>
+
+        <!-- Category card section: four shopping departments presented as equal content boxes -->
+        <section id="category-cards" class="category-section">
+            <h2>Shop by category</h2>
+
+            <!-- Electronics card: local technology photograph and department link -->
+            <article class="category-card">
+                <h3>Electronics</h3>
+                <img src="img/electronics.jpg" alt="Laptop, headphones and camera arranged on a desk">
+                <p>Computers, audio equipment and everyday devices.</p>
+                <a href="#">Explore electronics</a>
+            </article>
+
+            <!-- Home and kitchen card: local baking photograph and department link -->
+            <article class="category-card">
+                <h3>Home &amp; Kitchen</h3>
+                <img src="img/home-kitchen.jpg" alt="Baking tools and ingredients arranged on a table">
+                <p>Tools and essentials for cooking and comfortable living.</p>
+                <a href="#">Explore home products</a>
+            </article>
+
+            <!-- Fashion card: local clothing photograph and department link -->
+            <article class="category-card">
+                <h3>Fashion</h3>
+                <img src="img/fashion.jpg" alt="Clothing, shoes and accessories in a flat lay arrangement">
+                <p>Clothing and accessories for a refreshed wardrobe.</p>
+                <a href="#">Explore fashion</a>
+            </article>
+
+            <!-- Books card: local book photograph and department link -->
+            <article class="category-card">
+                <h3>Books</h3>
+                <img src="img/books.jpg" alt="A stack of books on an orange background">
+                <p>Reading choices for learning, creativity and relaxation.</p>
+                <a href="#">Explore books</a>
+            </article>
+        </section>
+
+        <!-- Deal strip: short promotional block separating shopping categories from supporting content -->
+        <section class="deal-strip">
+            <div class="deal-copy">
+                <span class="deal-label">LIMITED-TIME OFFERS</span>
+                <h2>Discover deals across popular departments</h2>
+                <p>Save on selected technology, home, fashion and book recommendations.</p>
+            </div>
+            <a class="deal-link" href="#">View today's deals</a>
+        </section>
+
+        <!-- Supporting information section: service benefits arranged in three simple boxes -->
+        <section class="service-section">
+            <h2>Shopping made simple</h2>
+
+            <!-- Delivery service box: communicates a common homepage benefit -->
+            <div class="service-box">
+                <h3>Convenient delivery</h3>
+                <p>Review delivery choices before placing an order.</p>
+            </div>
+
+            <!-- Selection service box: communicates product variety -->
+            <div class="service-box">
+                <h3>Wide selection</h3>
+                <p>Explore useful products across familiar departments.</p>
+            </div>
+
+            <!-- Support service box: communicates customer assistance -->
+            <div class="service-box">
+                <h3>Customer support</h3>
+                <p>Find account, return and order information in one place.</p>
+            </div>
+        </section>
+
+        <!-- Sign-in callout: centered account prompt near the end of the page -->
+        <section class="sign-in-panel">
+            <h2>See personalized recommendations</h2>
+            <a href="#">Sign in</a>
+            <p>New customer? <a href="#">Start here.</a></p>
+        </section>
+    </main>
+
+    <!-- Footer navigation: back-to-top control and grouped informational links -->
+    <footer class="site-footer">
+        <a class="back-to-top" href="#">Back to top</a>
+        <div class="footer-inner">
+            <!-- Company information group: introductory corporate links -->
+            <div class="footer-column">
+                <h2>Get to Know Us</h2>
+                <a href="#">About this project</a>
+                <a href="#">Careers</a>
+                <a href="#">Amazon Science</a>
+            </div>
+
+            <!-- Community information group: social and community links -->
+            <div class="footer-column">
+                <h2>Connect with Us</h2>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Community</a>
+            </div>
+
+            <!-- Business information group: seller and advertising links -->
+            <div class="footer-column">
+                <h2>Make Money with Us</h2>
+                <a href="#">Sell products</a>
+                <a href="#">Advertise products</a>
+                <a href="#">Become an affiliate</a>
+            </div>
+
+            <!-- Support information group: account and help links -->
+            <div class="footer-column">
+                <h2>Let Us Help You</h2>
+                <a href="#">Your account</a>
+                <a href="#">Your orders</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+
+        <!-- Academic project notice: clarifies the non-commercial purpose of the page -->
+        <p class="project-notice">Academic HTML and CSS layout study by He Chenghao. This page is not affiliated with Amazon.</p>
+    </footer>
+</body>
+</html>
