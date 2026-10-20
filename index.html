@@ -14,12 +14,14 @@
             <a class="brand" href="#" aria-label="Amazon home">
                 <img src="img/amazon-logo.svg" alt="Amazon logo">
             </a>
+            <!-- End of brand area -->
 
             <!-- Delivery area: short location information beside the brand -->
             <div class="delivery-block">
                 <span class="small-label">Deliver to</span>
                 <strong>Hong Kong</strong>
             </div>
+            <!-- End of delivery area -->
 
             <!-- Search area: category selector, search field and search button -->
             <form class="search-area" action="#" method="get">
@@ -32,23 +34,33 @@
                 <input id="search" name="search" type="text" placeholder="Search Amazon" aria-label="Search Amazon">
                 <button type="submit">Search</button>
             </form>
+            <!-- End of search area -->
 
-            <!-- Account links: sign-in and account navigation text -->
-            <a class="account-block" href="#">
-                <span class="small-label">Hello, sign in</span>
-                <strong>Account &amp; Lists</strong>
-            </a>
+            <!-- Account area: right-floating group containing account, order and cart links -->
+            <div class="account-area">
+                <!-- Account link: sign-in and account navigation text -->
+                <a class="account-block" href="#">
+                    <span class="small-label">Hello, sign in</span>
+                    <strong>Account &amp; Lists</strong>
+                </a>
+                <!-- End of account link -->
 
-            <!-- Order link: returns and order history navigation text -->
-            <a class="order-block" href="#">
-                <span class="small-label">Returns</span>
-                <strong>&amp; Orders</strong>
-            </a>
+                <!-- Order link: returns and order history navigation text -->
+                <a class="order-block" href="#">
+                    <span class="small-label">Returns</span>
+                    <strong>&amp; Orders</strong>
+                </a>
+                <!-- End of order link -->
 
-            <!-- Cart link: simple text treatment reserved for a later icon refinement -->
-            <a class="cart-block" href="#">Cart (0)</a>
+                <!-- Cart link: final navigation item in the right-side group -->
+                <a class="cart-block" href="#">Cart (0)</a>
+                <!-- End of cart link -->
+            </div>
+            <!-- End of account area -->
         </div>
+        <!-- End of top utility bar inner container -->
     </div>
+    <!-- End of top utility bar -->
 
     <!-- Secondary navigation bar: product departments and service links -->
     <div class="category-nav">
@@ -60,7 +72,9 @@
             <a href="#">Gift Cards</a>
             <a href="#">Sell</a>
         </div>
+        <!-- End of secondary navigation inner container -->
     </div>
+    <!-- End of secondary navigation bar -->
 
     <!-- Main page content: fixed-width centered area containing the promotional and shopping sections -->
     <main class="page-shell">
@@ -73,10 +87,12 @@
                 <p>Browse practical categories and discover a simple shopping experience inspired by Amazon's homepage structure.</p>
                 <a href="#category-cards">Shop featured categories</a>
             </div>
+            <!-- End of hero message -->
         </section>
+        <!-- End of hero section -->
 
         <!-- Category card section: four shopping departments presented as equal content boxes -->
-        <section id="category-cards" class="category-section">
+        <section id="category-cards" class="category-section clearfix">
             <h2>Shop by category</h2>
 
             <!-- Electronics card: local technology photograph and department link -->
@@ -86,6 +102,7 @@
                 <p>Computers, audio equipment and everyday devices.</p>
                 <a href="#">Explore electronics</a>
             </article>
+            <!-- End of electronics card -->
 
             <!-- Home and kitchen card: local baking photograph and department link -->
             <article class="category-card">
@@ -94,6 +111,7 @@
                 <p>Tools and essentials for cooking and comfortable living.</p>
                 <a href="#">Explore home products</a>
             </article>
+            <!-- End of home and kitchen card -->
 
             <!-- Fashion card: local clothing photograph and department link -->
             <article class="category-card">
@@ -102,6 +120,7 @@
                 <p>Clothing and accessories for a refreshed wardrobe.</p>
                 <a href="#">Explore fashion</a>
             </article>
+            <!-- End of fashion card -->
 
             <!-- Books card: local book photograph and department link -->
             <article class="category-card">
@@ -110,7 +129,9 @@
                 <p>Reading choices for learning, creativity and relaxation.</p>
                 <a href="#">Explore books</a>
             </article>
+            <!-- End of books card -->
         </section>
+        <!-- End of category card section -->
 
         <!-- Deal strip: short promotional block separating shopping categories from supporting content -->
         <section class="deal-strip">
@@ -119,8 +140,13 @@
                 <h2>Discover deals across popular departments</h2>
                 <p>Save on selected technology, home, fashion and book recommendations.</p>
             </div>
+            <!-- End of deal copy -->
             <a class="deal-link" href="#">View today's deals</a>
+
+            <!-- Extra clearing element: restores the deal strip's height after its children float -->
+            <div class="clear-both"></div>
         </section>
+        <!-- End of deal strip -->
 
         <!-- Supporting information section: service benefits arranged in three simple boxes -->
         <section class="service-section">
@@ -131,19 +157,23 @@
                 <h3>Convenient delivery</h3>
                 <p>Review delivery choices before placing an order.</p>
             </div>
+            <!-- End of delivery service box -->
 
             <!-- Selection service box: communicates product variety -->
             <div class="service-box">
                 <h3>Wide selection</h3>
                 <p>Explore useful products across familiar departments.</p>
             </div>
+            <!-- End of selection service box -->
 
             <!-- Support service box: communicates customer assistance -->
             <div class="service-box">
                 <h3>Customer support</h3>
                 <p>Find account, return and order information in one place.</p>
             </div>
+            <!-- End of support service box -->
         </section>
+        <!-- End of supporting information section -->
 
         <!-- Sign-in callout: centered account prompt near the end of the page -->
         <section class="sign-in-panel">
@@ -151,7 +181,9 @@
             <a href="#">Sign in</a>
             <p>New customer? <a href="#">Start here.</a></p>
         </section>
+        <!-- End of sign-in callout -->
     </main>
+    <!-- End of main page content -->
 
     <!-- Footer navigation: back-to-top control and grouped informational links -->
     <footer class="site-footer">
@@ -164,6 +196,7 @@
                 <a href="#">Careers</a>
                 <a href="#">Amazon Science</a>
             </div>
+            <!-- End of company information group -->
 
             <!-- Community information group: social and community links -->
             <div class="footer-column">
@@ -172,6 +205,7 @@
                 <a href="#">Instagram</a>
                 <a href="#">Community</a>
             </div>
+            <!-- End of community information group -->
 
             <!-- Business information group: seller and advertising links -->
             <div class="footer-column">
@@ -180,6 +214,7 @@
                 <a href="#">Advertise products</a>
                 <a href="#">Become an affiliate</a>
             </div>
+            <!-- End of business information group -->
 
             <!-- Support information group: account and help links -->
             <div class="footer-column">
@@ -188,10 +223,14 @@
                 <a href="#">Your orders</a>
                 <a href="#">Help</a>
             </div>
+            <!-- End of support information group -->
         </div>
+        <!-- End of footer navigation groups -->
 
         <!-- Academic project notice: clarifies the non-commercial purpose of the page -->
         <p class="project-notice">Academic HTML and CSS layout study by He Chenghao. This page is not affiliated with Amazon.</p>
+        <!-- End of academic project notice -->
     </footer>
+    <!-- End of footer navigation -->
 </body>
 </html>

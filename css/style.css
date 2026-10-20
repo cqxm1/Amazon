@@ -31,28 +31,18 @@ img {
     padding: 10px 0;
 }
 
-/* Header content container: centers the header content at a fixed desktop width. */
+/* Header content container: centers the header and uses overflow to contain its floated children. */
 .top-bar-inner {
     width: 1200px;
     margin: 0 auto;
-    text-align: center;
+    overflow: hidden;
 }
 
-/* Header item group: aligns the main header components on one line for the first-stage layout. */
-.brand,
-.delivery-block,
-.search-area,
-.account-block,
-.order-block,
-.cart-block {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-/* Brand area: provides a light surface so the downloaded logo remains readable. */
+/* Brand area: floats the logo left and provides a light surface for readability. */
 .brand {
     background: #ffffff;
     border: 2px solid #ffffff;
+    float: left;
     padding: 7px 9px;
     width: 105px;
 }
@@ -63,8 +53,9 @@ img {
     height: 21px;
 }
 
-/* Delivery area: separates the location text from the logo and search bar. */
+/* Delivery area: floats beside the logo and separates the location from the search bar. */
 .delivery-block {
+    float: left;
     margin-left: 10px;
     padding: 5px 8px;
     text-align: left;
@@ -79,10 +70,11 @@ img {
     line-height: 1.2;
 }
 
-/* Search form: creates the main search control between the location and account areas. */
+/* Search form: floats left to create the wide center control between the two header groups. */
 .search-area {
     background: #ffffff;
     border: 3px solid #febd69;
+    float: left;
     margin: 0 8px;
     padding: 0;
     width: 570px;
@@ -112,7 +104,7 @@ img {
     color: #333333;
     font-size: 14px;
     padding: 0 10px;
-    width: 360px;
+    width: 394px;
 }
 
 /* Search button: uses the familiar orange Amazon accent color. */
@@ -121,6 +113,17 @@ img {
     color: #111111;
     font-weight: bold;
     width: 70px;
+}
+
+/* Account area: floats the complete account, order and cart group to the right. */
+.account-area {
+    float: right;
+}
+
+/* Account links: keeps the three right-side navigation items on one horizontal line. */
+.account-area a {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* Account and order areas: creates compact two-line navigation items. */
@@ -226,7 +229,7 @@ img {
     font-weight: bold;
 }
 
-/* Category section: creates a white shopping panel for the four main departments. */
+/* Category section: creates a white standard-flow parent for the floated department cards. */
 .category-section {
     background: #ffffff;
     border: 1px solid #d5d9d9;
@@ -242,15 +245,26 @@ img {
     text-align: left;
 }
 
-/* Category cards: forms equal content boxes with an initial inline-block arrangement. */
+/* Category cards: floats four equal box-model cards from left to right in one row. */
 .category-card {
     border: 1px solid #dddddd;
-    display: inline-block;
+    float: left;
     margin: 0 5px;
     padding: 14px;
     text-align: left;
-    vertical-align: top;
     width: 242px;
+}
+
+/* Double pseudo-element clearfix: restores the height of parents containing floated cards. */
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+}
+
+/* Clearfix closing rule: clears both left and right float effects after the final card. */
+.clearfix::after {
+    clear: both;
 }
 
 /* Category card headings: separates the department name from its image. */
@@ -294,11 +308,10 @@ img {
     text-align: center;
 }
 
-/* Deal copy: limits the text block width within the promotional divider. */
+/* Deal copy: floats left and limits the text width within the promotional divider. */
 .deal-copy {
-    display: inline-block;
+    float: left;
     text-align: left;
-    vertical-align: middle;
     width: 820px;
 }
 
@@ -316,15 +329,18 @@ img {
     font-size: 22px;
 }
 
-/* Deal action: creates a bordered call-to-action area at the right of the strip. */
+/* Deal action: floats right to form a clear left-right promotional arrangement. */
 .deal-link {
     border: 1px solid #febd69;
     color: #febd69;
-    display: inline-block;
+    float: right;
     font-weight: bold;
-    margin-left: 28px;
     padding: 10px 18px;
-    vertical-align: middle;
+}
+
+/* Extra-tag clearing method: closes float effects inside the deal strip. */
+.clear-both {
+    clear: both;
 }
 
 /* Supporting service section: groups three customer-benefit boxes on a white panel. */
