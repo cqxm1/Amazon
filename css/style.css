@@ -55,6 +55,7 @@ img {
 
 /* Delivery area: floats beside the logo and separates the location from the search bar. */
 .delivery-block {
+    border: 1px solid transparent;
     float: left;
     margin-left: 10px;
     padding: 5px 8px;
@@ -115,6 +116,11 @@ img {
     width: 70px;
 }
 
+/* Search button feedback: darkens the taught accent color when the control is hovered. */
+.search-area button:hover {
+    background: #f3a847;
+}
+
 /* Account area: floats the complete account, order and cart group to the right. */
 .account-area {
     float: right;
@@ -129,6 +135,7 @@ img {
 /* Account and order areas: creates compact two-line navigation items. */
 .account-block,
 .order-block {
+    border: 1px solid transparent;
     padding: 5px 6px;
     text-align: left;
     width: 86px;
@@ -136,6 +143,7 @@ img {
 
 /* Cart area: reserves a clear final navigation item at the right side. */
 .cart-block {
+    border: 1px solid transparent;
     font-size: 15px;
     font-weight: bold;
     padding: 10px 5px;
@@ -229,6 +237,12 @@ img {
     font-weight: bold;
 }
 
+/* Hero action feedback: reinforces that the featured-category text is a link. */
+.hero-copy a:hover {
+    color: #c7511f;
+    text-decoration: underline;
+}
+
 /* Category section: creates a white standard-flow parent for the floated department cards. */
 .category-section {
     background: #ffffff;
@@ -299,6 +313,11 @@ img {
     text-decoration: underline;
 }
 
+/* Category card feedback: highlights the complete department box without changing its size. */
+.category-card:hover {
+    border-color: #febd69;
+}
+
 /* Deal strip: creates a strong promotional divider between shopping sections. */
 .deal-strip {
     background: #172233;
@@ -338,6 +357,12 @@ img {
     padding: 10px 18px;
 }
 
+/* Deal action feedback: reverses the accent colors when the link is hovered. */
+.deal-link:hover {
+    background: #febd69;
+    color: #111111;
+}
+
 /* Extra-tag clearing method: closes float effects inside the deal strip. */
 .clear-both {
     clear: both;
@@ -364,11 +389,17 @@ img {
     background: #f7fafa;
     border: 1px solid #d5d9d9;
     display: inline-block;
+    height: 62px;
     margin: 0 7px;
     padding: 20px;
     text-align: left;
     vertical-align: top;
     width: 320px;
+}
+
+/* Service box feedback: gives all three equal-height benefit boxes a clear hover boundary. */
+.service-box:hover {
+    border-color: #007185;
 }
 
 /* Service headings: creates a compact visual hierarchy inside each information box. */
@@ -402,6 +433,11 @@ img {
     padding: 7px 70px;
 }
 
+/* Sign-in action feedback: darkens the button-like link on hover. */
+.sign-in-panel > a:hover {
+    background: #f7ca00;
+}
+
 /* Sign-in supporting text: reduces the size of the new-customer message. */
 .sign-in-panel p {
     font-size: 12px;
@@ -425,6 +461,11 @@ img {
     color: #ffffff;
     display: block;
     padding: 13px 0;
+}
+
+/* Back-to-top feedback: uses a lighter footer shade when the link is hovered. */
+.back-to-top:hover {
+    background: #485769;
 }
 
 /* Footer content container: centers the four footer information groups. */
